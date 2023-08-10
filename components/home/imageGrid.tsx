@@ -30,7 +30,11 @@ const imageGrid: React.FC<ImageGridProps> = () => {
           key={index}
           className={`md:w-40 md:h-40 w-16 h-16 ${imageGap(index)}`}
         >
-          <Image src={image} alt="Loading..." className="rounded-lg" />
+          <Image
+            src={image}
+            alt="Loading..."
+            className="rounded-lg animate-pulse-custom"
+          />
         </div>
       ))}
     </div>
