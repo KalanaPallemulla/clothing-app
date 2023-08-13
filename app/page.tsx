@@ -1,6 +1,6 @@
 "use client";
 
-import { ImageGrid, TopItems } from "@/components";
+import { ImageGrid, Product, TopItems } from "@/components";
 import React, { useEffect, useRef, useState } from "react";
 import { BsFacebook, BsInstagram, BsCartDash } from "react-icons/bs";
 import { AiOutlineArrowUp } from "react-icons/ai";
@@ -76,8 +76,8 @@ export default function Home() {
           <ImageGrid />
         </div>
       </div>
-      <div ref={secondRef} className="h-screen w-screen">
-        hi
+      <div ref={secondRef} className="h-auto w-screen">
+        <Product />
       </div>
       <div className="circle w-10 h-10 border-2 border-orange-700 rounded-full fixed top-4 right-4 flex justify-center items-center">
         <BsCartDash className="text-orange-700 font-bold" size={20} />
@@ -85,7 +85,7 @@ export default function Home() {
       {isShow && (
         <div
           onClick={scrollToTop}
-          className="circle w-10 h-10  fixed bottom-16 right-4 flex justify-center items-center"
+          className="circle w-10 h-10  fixed bottom-16 right-4"
         >
           <AiOutlineArrowUp
             className="text-black font-bold cursor-pointer"
