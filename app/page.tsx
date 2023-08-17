@@ -8,7 +8,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 export default function Home() {
   const firstRef = useRef<HTMLDivElement>(null);
   const secondRef = useRef<HTMLDivElement>(null);
-  const [isShow, setIsShow] = useState<Boolean>(false);
+  const [isShow, setIsShow] = useState<boolean>(false);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -76,7 +76,7 @@ export default function Home() {
           <ImageGrid />
         </div>
       </div>
-      <div ref={secondRef} className="h-auto w-screen">
+      <div ref={secondRef} className="h-auto w-screen px-10">
         <Product />
       </div>
       <div className="circle w-10 h-10 border-2 border-orange-700 rounded-full fixed top-4 right-4 flex justify-center items-center">
